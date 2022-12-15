@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Результат{% endblock title %}
+{% block header %}Результат минимизации функции с одной переменной{% endblock header %}
+{% block content%}
+  <p>Задан метод: {{ method }}</p>
+  <p>Рассматриваемая функция: {{ function }}</p>
+  <h3>Решение: </h3>
+        <ul>{{ result }}</ul>
+{% endblock content %}

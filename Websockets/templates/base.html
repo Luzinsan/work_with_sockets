@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+{% comment %}
+     <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+{% endcomment %}
+    <title>{% block title %}Лаба по СиТ'у{% endblock title %}</title>
+</head>
+<body>
+    <h1>{% block header %}Минимизация функции с одной переменной{% endblock header %}</h1>
+    <div>
+        {% block general %}
+            <h3>Текущие дата и время: {% now "d.m.y P" %}</h3>
+        {% endblock general %}
+    </div>
+    <div>{% block content %}{% endblock content %}</div>
+    <div>Выполнено студенткой гр. 430-2: Лузинсан А.А. 2022.</div>
+</body>
+</html>

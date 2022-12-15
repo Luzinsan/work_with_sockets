@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Пользователь{% endblock title %}
+{% block header %}Данные пользователя{% endblock header %}
+{% block content%}
+<form method="POST" action="minimization">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Send" />
+    </form>
+{% endblock content %}

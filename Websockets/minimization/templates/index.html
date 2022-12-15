@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Главная{% endblock title %}
+{% block header %}Общая информация{% endblock header %}
+{% block content%}
+    <h3>Устройство</h3>
+        <b>Главная</b>
+        <p>Схема запроса: {{ scheme }}</p>
+        <p>Тело запроса: {{ body }}</p>
+        <p>Запрошенный путь: {{ path }}</p>
+        <p>Метод запроса (GET, POST, PUT и т.д.): {{ method }}</p>
+        <p>Кодировка: {{ encoding }}</p>
+        <p>Тип содержимого запроса (значение заголовка CONTENT_TYPE): {{ content_type }}</p>
+        <p>Host: {{ host }}</p>
+        <p>User-agent: {{ user_agent }}</p>
+     <div><a href="user/">Перейти к авторизации</a></div>
+{% endblock content %}
