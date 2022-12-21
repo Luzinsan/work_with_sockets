@@ -1,1 +1,7 @@
 .idea/
+
+Websockets/minimization/__pycache__/
+
+Websockets/Websockets/__pycache__/
+
+Websockets/minimization/migrations/__pycache__/
